@@ -1,15 +1,21 @@
 #include<stdio.h>
-void printhw(int count){
-    if(count==0){
-        return;
+int table(int n){
+    if(n==0){
+        return ;
     }
-    printf("hello nikhil\n");
-    printhw(count-1);
+    else
+    {for(int i=1;i>=10;i++){
+        return (i*n);
+
+    }
+    }
 }
+
 int main(){
-    int n;
-    printf("enter n:");
-    scanf("%d",&n);
-    printhw(n);
+    int a;
+    printf("enter a:");
+    scanf("%d",a);
+    printf("the table of %d is:\n %d\n",a,table(a));
+    
     return 0;
-} 
+}
